@@ -1,0 +1,151 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #e5e5fd;
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.content {
+    max-width: 900px;
+    width: 100%;
+}
+
+
+/* Image Section */
+
+.image {
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Top Section */
+
+.top_section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.top_section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1d1e4c;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.top_section h1:hover {
+    color: #ff5733;
+}
+
+.top_section h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* About Section */
+
+.about {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about h2 {
+    font-weight: 400;
+    font-size: 70px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about h2:hover {
+    transform: translateY(-5px);
+}
+
+.about p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+
+
+/* Biography Section */
+
+.biography {
+    margin-top: 50px;
+}
+
+.biography h3 {
+    margin-bottom: 10px;
+}
+
+.biography ul {
+    margin-left: 50px;
+}
+
+.biography li {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.biography li:hover {
+    transform: translateX(10px);
+    color: #ff5733;
+}
+
+
+/* Footer */
+
+.footer p {
+    margin: 50px 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s;
+}
+
+
+/* Keyframe Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
